@@ -7,70 +7,65 @@
 </head>
 <body>
     <h1> Contact Form</h1>
-    <p>Hello there! To access our services, please fill in the necessary details below:</p>
+    <p>Hello there! Thank you for joining us at Tessa's Hub! Now you've known us, we'd love to know you too! Kindly take a moment to fill this form below:</p>
 
     <form id="contactForm" action="https://formspree.io/f/xqabygwd" method="post" enctype="multipart/form-data" target="_blank"> 
-        
-
-        <div class="entry">
-            <label for="name">Name:<span class="required-star"></span> </label>
-            <input type="text" id="name" placeholder="your full name" name="name"required>
-        </div>
-    
-
-        <div class="entry">
-            <label for="email"> Email:<span class="required-star"></span></label>
-            <input type="email" id="email" placeholder="email@gmail.com" name="email"required>
-        </div>
-
-
-        <div class="entry">
-            <label for="phone"> Phone Number: <span class="required-star"></span></label>
-            <input type="tel" id="tel" placeholder="+2340000000000" name="tel"required>    
-        </div>
-
-        <label for="">Gender: <span class="required-star"> </span> </label>
-        <div class="radio">
-            <input type="radio" name="gender" value="male" id="gender">
-            <label for="">Male <span class="required-star"> </span> </label>
-        </div>
-        <div class="radio">
-            <input type="radio" name="gender" value="female" id="gender">
-            <label for="">Female <span class="required-star"> </span> </label>
-        </div>
-        <div class="radio">
-            <input type="radio" name="gender" value="other" id="gender">
-            <label for="">Other <span class="required-star"> </span> </label>
-        </div>
-
 
         <div>
-            <label> Interests (you can select more than one): <span class="required-star"></span></label> <br>
-            <input type="checkbox" name="" id="gender">Music<br>
-            <input type="checkbox" name="" id="gender">Movies<br>
-            <input type="checkbox" name="" id="gender">Games<br>
-            <input type="checkbox" name="" id="gender">Sports <br>
-            <input type="checkbox" name="" id="gender">Dancing <br>
-            <input type="checkbox" name="" id="gender">Singing
-        </div>
+            <label for="name">Name:</label>
+            <input type="text" name="username" placeholder="your full name" required>
+        </div><br>
+    
+        <div>
+            <label for="email"> Email:</label>
+            <input type="email" placeholder="email@gmail.com" name="email" required>
+        </div><br>
 
-        <label for="rating">Rate Your Tech Journey So Far</label>
-        
-        <select name="" id="">
-            <option value="0">Select</option>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="enter your password here" name="password entry" required >
+        </div><br>
+
+        <div>
+            <label for="phone"> Phone Number:</label>
+            <input type="tel" id="tel" placeholder="+2340000000000" name="tel"required>    
+        </div><br>
+
+        <div>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" name="gender" value="male">
+            <label for="">Male</label>
+
+            <input type="radio" name="gender" value="female" >
+            <label for="gender">Female</label>
+
+            <input type="radio" name="gender" value="other">
+            <label for="gender">Other</label>
+        </div><br>
+
+        <div>
+            <label> Hobbies (you can select more than one): </label> <br>
+            <input type="checkbox" name="hobby1">Music<br>
+            <input type="checkbox" name="hobby2">Movies<br>
+            <input type="checkbox" name="hobby3">Games<br>
+            <input type="checkbox" name="hobby4">Sports <br>
+            <input type="checkbox" name="hobby5">Dancing <br>
+            <input type="checkbox" name="hobby6">Singing
+        </div><br>
+
+        <label for="rating">Rate your mobile network speed and connection.</label>
+        <select name="options">
             <option value="1">good</option>
             <option value="2">very good</option>
             <option value="3">excellent</option>
             <option value="4">outstanding</option>
-        </select>
-
+        </select><br><br>
 
         <div>
             <label for="message">Message:</label> <br> 
-            <textarea name="message" id="message" placeholder="tell us a little about yourself" rows="4" style="width:300px;" ></textarea>
-        </div> 
-        
-        
+            <textarea name="message" id="message" placeholder="tell us a little about yourself" rows="4" cols="60"style="width:300px;" ></textarea>
+        </div><br>
+    
         <button type="submit"> SUBMIT FORM</button>
 </body>
 </html>
