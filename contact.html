@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-GOSSIP REGISTRATION FORM</title>
+</head>
+<body>
+    <h1> Contact Form</h1>
+    <p>Hello there! To access our services, please fill in the necessary details below:</p>
+
+    <form id="contactForm" action="https://formspree.io/f/xqabygwd" method="post" enctype="multipart/form-data" target="_blank"> 
+        
+
+        <div class="entry">
+            <label for="name">Name:<span class="required-star"></span> </label>
+            <input type="text" id="name" placeholder="your full name" name="name"required>
+        </div>
+    
+
+        <div class="entry">
+            <label for="email"> Email:<span class="required-star"></span></label>
+            <input type="email" id="email" placeholder="email@gmail.com" name="email"required>
+        </div>
+
+
+        <div class="entry">
+            <label for="phone"> Phone Number: <span class="required-star"></span></label>
+            <input type="tel" id="tel" placeholder="+2340000000000" name="tel"required>    
+        </div>
+
+        <label for="">Gender: <span class="required-star"> </span> </label>
+        <div class="radio">
+            <input type="radio" name="gender" value="male" id="gender">
+            <label for="">Male <span class="required-star"> </span> </label>
+        </div>
+        <div class="radio">
+            <input type="radio" name="gender" value="female" id="gender">
+            <label for="">Female <span class="required-star"> </span> </label>
+        </div>
+        <div class="radio">
+            <input type="radio" name="gender" value="other" id="gender">
+            <label for="">Other <span class="required-star"> </span> </label>
+        </div>
+
+
+        <div>
+            <label> Interests (you can select more than one): <span class="required-star"></span></label> <br>
+            <input type="checkbox" name="" id="gender">Music<br>
+            <input type="checkbox" name="" id="gender">Movies<br>
+            <input type="checkbox" name="" id="gender">Games<br>
+            <input type="checkbox" name="" id="gender">Sports <br>
+            <input type="checkbox" name="" id="gender">Dancing <br>
+            <input type="checkbox" name="" id="gender">Singing
+        </div>
+
+        <label for="rating">Rate Your Tech Journey So Far</label>
+        
+        <select name="" id="">
+            <option value="0">Select</option>
+            <option value="1">good</option>
+            <option value="2">very good</option>
+            <option value="3">excellent</option>
+            <option value="4">outstanding</option>
+        </select>
+
+
+        <div>
+            <label for="message">Message:</label> <br> 
+            <textarea name="message" id="message" placeholder="tell us a little about yourself" rows="4" style="width:300px;" ></textarea>
+        </div> 
+        
+        
+        <button type="submit"> SUBMIT FORM</button>
+</body>
+</html>
